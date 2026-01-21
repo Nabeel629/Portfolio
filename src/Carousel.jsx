@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import "./Carousel.css";
+import "Carousel.css";
 
 const achievements = [
   // tumhare items
