@@ -1,4 +1,3 @@
-/* Carousel.css */
 :root {
   --glass: rgba(255, 255, 255, 0.1);
   --glass-border: rgba(255, 255, 255, 0.2);
@@ -63,53 +62,54 @@
 /* Cards */
 .carousel-card {
   position: absolute;
-  width: clamp(280px, 25vw, 400px);
-  height: clamp(380px, 60vh, 500px);
-  background: var(--glass);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: var(--blur);
-  border: 1px solid var(--glass-border);
-  border-radius: 32px;
-  transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
+
+  /* Full width center card */
+  width: 40%; /* 80% of parent/container */
+  max-width: 400px; /* optional: max width */
+  height: 40vh; /* 60% of viewport height */
+
+  border-radius: 20px;
+  background: #111;
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateX(0) scale(0.7); /* initial scale for non-active cards */
+  z-index: 1;
   cursor: pointer;
   overflow: hidden;
 }
 
-/* 3D Transform States */
 .carousel-card.active {
-  transform: translate3d(0, 0, 250px) rotateY(0deg);
-  z-index: 10;
+  transform: translateX(0) scale(1); /* full scale for active card */
   opacity: 1;
-  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.8);
+  z-index: 10;
 }
 
+/* Side cards */
 .carousel-card.left {
-  transform: translate3d(calc(var(--shift-x) * -1), 0, -150px) rotateY(35deg) scale(0.85);
-  z-index: 5;
+  transform: translateX(-40%) scale(0.8); /* move left and scale down */
   opacity: 0.5;
+  z-index: 5;
 }
 
 .carousel-card.right {
-  transform: translate3d(var(--shift-x), 0, -150px) rotateY(-35deg) scale(0.85);
-  z-index: 5;
+  transform: translateX(40%) scale(0.8); /* move right and scale down */
   opacity: 0.5;
+  z-index: 5;
 }
 
 .carousel-card.far-left {
-  transform: translate3d(calc(var(--shift-x) * -1.8), 0, -500px) rotateY(45deg) scale(0.6);
-  z-index: 1;
+  transform: translateX(-80%) scale(0.6);
   opacity: 0.2;
 }
 
 .carousel-card.far-right {
-  transform: translate3d(calc(var(--shift-x) * 1.8), 0, -500px) rotateY(-45deg) scale(0.6);
-  z-index: 1;
+  transform: translateX(80%) scale(0.6);
   opacity: 0.2;
 }
 
+
 .carousel-card.hidden {
-  transform: translate3d(0, 0, -1000px) scale(0.1);
-  opacity: 0;
+  display: none;
 }
 
 /* Card Inner */
@@ -227,11 +227,13 @@
   }
 
   .carousel-card.left {
-    transform: translate3d(-45%, 0, -250px) rotateY(45deg) scale(0.8);
+    transform: translate3d(-45%, 0, -250px) rotateY(35deg) scale(0.8);
+    opacity: 0.6;
   }
 
   .carousel-card.right {
-    transform: translate3d(45%, 0, -250px) rotateY(-45deg) scale(0.8);
+    transform: translate3d(45%, 0, -250px) rotateY(-35deg) scale(0.8);
+    opacity: 0.6;
   }
 
   .dot {
