@@ -191,7 +191,7 @@ function Home() {
       </div>
 
       {/* SERVICES */}
-      <section className="services">
+      {/* <section className="services">
         <div className="services-header">
           <div className="services-text">
             <span className="services-label">SERVICES</span>
@@ -208,14 +208,14 @@ function Home() {
           </div>
           <div className="service-index">01</div>
         </div>
-      </section>
+      </section> */}
 
       {/* CONTACT CARD */}
-      <div className="contact-card">
+      {/* <div className="contact-card">
         <h2>Get a Free Quote</h2>
         <p>Let’s discuss your project and help you build the perfect website for your business.</p>
         <button>Get Quote</button>
-      </div>
+      </div> */}
     </div>
   );
 }
