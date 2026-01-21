@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./Carousel.css"; // Your CSS from above
-import 'index.css';
+import './index.css';
 const achievements = [
   {
     id: 1,
