@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import "./Carousel.css"; // Your CSS from above
-import './index.css';
+
 const achievements = [
   {
     id: 1,
@@ -58,7 +58,7 @@ export default function Carousel() {
   const [activeIndex, setActiveIndex] = useState(0);
   const total = achievements.length;
 
-  // Auto scroll every 3sec
+  // Auto scroll every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveIndex((prev) => (prev + 1) % total);
