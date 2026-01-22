@@ -211,11 +211,11 @@ function Home() {
       </section>
 
       {/* CONTACT CARD */}
-      {/* <div className="contact-card">
+      <div className="contact-card">
         <h2>Get a Free Quote</h2>
         <p>Let’s discuss your project and help you build the perfect website for your business.</p>
         <button>Get Quote</button>
-      </div> */}
+      </div>
     </div>
   );
 }
