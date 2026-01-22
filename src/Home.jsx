@@ -9,7 +9,7 @@ function Home() {
     { name: "Ahmed Khan", role: "Shopify Store Owner", message: "Amazing Shopify store! Clean design, fast loading and great support.", stars: "★★★★★" },
     { name: "Sarah Ali", role: "Content Creator", message: "Very professional WordPress blog setup. SEO friendly and smooth UI.", stars: "★★★★★" },
     { name: "Usman Raza", role: "Business Owner", message: "Custom PHP system delivered on time. Highly recommended developer.", stars: "★★★★☆" },
-    { name: "Uzair Khan", role: "Web Designer", message: "Elementor websites built perfectly. Fast and responsive.", stars: "★★★★★" },
+    { name: "Uzair ", role: "Web Designer", message: "Elementor websites built perfectly. Fast and responsive.", stars: "★★★★★" },
     { name: "Hina Malik", role: "Ecommerce Store Owner", message: "WooCommerce store ready to sell with custom features. Loved it!", stars: "★★★★★" },
   ];
   const [current, setCurrent] = useState(0);
