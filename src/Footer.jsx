@@ -28,7 +28,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        © {new Date().getFullYear()} ReactSite | All Rights Reserved
+        © {new Date().getFullYear()} Nabeel Akram | All Rights Reserved
       </div>
     </footer>
   );
