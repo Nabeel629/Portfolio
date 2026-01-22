@@ -6,13 +6,16 @@ import Home from "./Home";
 import About from "./About";
 import Services from "./Services";
 import Contact from "./Contact";
-import { useEffect } from "react";
+import { use, useEffect, useState } from "react";
 import Lenis from "@studio-freight/lenis";
 import Footer from "./Footer";
 import Carousel from "./Carousel";
 function App() {
-   
-  return (
+   const [page,setPage]=useState("Nabeel Akram");
+useEffect(() => {
+  document.title = page+" Portfolio";
+}, [page]);
+   return (
     <BrowserRouter>
 
       {/* Header / Navbar */}
