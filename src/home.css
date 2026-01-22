@@ -153,6 +153,7 @@ body, html {
   background-color: #111;
   text-align: center;
 }
+
 .about-section h2 { font-size: 38px; margin-bottom: 20px; color: #00ffcc; }
 .about-section p { font-size: 1.1rem; max-width: 800px; margin: 0 auto 40px auto; line-height: 1.6; color: #ccc; }
 .about-stats { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }

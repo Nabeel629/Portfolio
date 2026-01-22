@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import aboutImg from "./assets/about.jpg";
 import ss from "./assets/ss.png";
 import './home.css';
-
+import './Anim.css';
 function Home() {
   // ---------------- TESTIMONIALS ----------------
   const reviews = [
@@ -80,15 +80,15 @@ function Home() {
           </p>
 
           <div className="about-stats">
-            <div className="stat-card">
+            <div className="stat-card anim">
               <h3>2+</h3>
               <p>Years Experience</p>
             </div>
-            <div className="stat-card">
+            <div className="stat-card anim">
               <h3>50+</h3>
               <p>Projects Completed</p>
             </div>
-            <div className="stat-card">
+            <div className="stat-card anim">
               <h3>5+</h3>
               <p>Industries Served</p>
             </div>
