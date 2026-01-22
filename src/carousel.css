@@ -14,7 +14,7 @@
   background: #000;
   perspective: 2000px;
   overflow: hidden;
-  width: 100%;
+  max-width: 100vw;
   color: white;
   padding: 50px 20px;
 }
@@ -215,33 +215,23 @@
     --shift-x: 35vw;
   }
 }
-
 @media (max-width: 600px) {
   :root {
-    --shift-x: 38vw;
+    --shift-x: 30vw; /* optional: control spacing */
   }
 
   .carousel-card {
-    width: 75vw;
-    height: 450px;
+    width: 60vw; /* smaller width for mobile */
+    height: 400px; /* slightly smaller height */
   }
 
   .carousel-card.left {
-    transform: translate3d(-45%, 0, -250px) rotateY(35deg) scale(0.8);
+    transform: translate3d(-35%, 0, -200px) rotateY(25deg) scale(0.8);
     opacity: 0.6;
   }
 
   .carousel-card.right {
-    transform: translate3d(45%, 0, -250px) rotateY(-35deg) scale(0.8);
+    transform: translate3d(35%, 0, -200px) rotateY(-25deg) scale(0.8);
     opacity: 0.6;
-  }
-
-  .dot {
-    width: 4px;
-    height: 4px;
-  }
-
-  .dot.active {
-    width: 12px;
   }
 }
