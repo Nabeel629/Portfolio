@@ -38,10 +38,7 @@ export default function Carousel() {
             key={item.id}
             className={`carousel-card ${getPositionClass(index)}`}
           >
-            <div
-              className="card-image"
-              style={{ backgroundImage: `url(${item.image})` }}
-            />
+            
             <div className="card-content">
               <div className="card-header">
                 <h3>{item.title}</h3>

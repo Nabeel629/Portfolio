@@ -3,61 +3,87 @@ import aboutImg from "./assets/about.jpg";
 import ss from "./assets/ss.png";
 import './home.css';
 import './Anim.css';
+import Projects from "./Projects";
 function Home() {
   // ---------------- TESTIMONIALS ----------------
-  const reviews = [
-    { name: "Ahmed Khan", role: "Shopify Store Owner", message: "Amazing Shopify store! Clean design, fast loading and great support.", stars: "★★★★★" },
-    { name: "Sarah Ali", role: "Content Creator", message: "Very professional WordPress blog setup. SEO friendly and smooth UI.", stars: "★★★★★" },
-    { name: "Usman Raza", role: "Business Owner", message: "Custom PHP system delivered on time. Highly recommended developer.", stars: "★★★★☆" },
-    { name: "Uzair ", role: "Web Designer", message: "Elementor websites built perfectly. Fast and responsive.", stars: "★★★★★" },
-    { name: "Hina Malik", role: "Ecommerce Store Owner", message: "WooCommerce store ready to sell with custom features. Loved it!", stars: "★★★★★" },
-  ];
+const reviews = [
+  {
+    title: "Ahmed Khan",
+    category: "Shopify Store",
+    type: "Excellent Shopify development. Clean code, fast delivery, and great communication throughout the project.",
+    stars: "★★★★★"
+  },
+  {
+    title: "Sarah Malik",
+    category: "WordPress Website",
+    type: "Highly professional work. The website looks modern and performs perfectly on all devices.",
+    stars: "★★★★★"
+  },
+  {
+    title: "Usman Ali",
+    category: "React App",
+    type: "Amazing React skills. UI animations and performance were exactly what we needed.",
+    stars: "★★★★★"
+  },
+  {
+    title: "Hassan Raza",
+    category: "Custom PHP",
+    type: "Delivered a fully customized solution. Very satisfied with the quality and support.",
+    stars: "★★★★☆"
+  },
+  {
+    title: "Ayesha Noor",
+    category: "Shopify Customization",
+    type: "Quick fixes, custom features, and great attention to detail. Highly recommended.",
+    stars: "★★★★★"
+  }
+];
 
 
   const servicesData = [
-  {
-    id: 1,
-    icon: "🛒",
-    title: "Shopify Development",
-    description:
-      "Custom Shopify stores, theme customization, and performance optimization for scalable eCommerce.",
-  },
-  {
-    id: 2,
-    icon: "🧩",
-    title: "Custom Liquid Development",
-    description:
-      "Advanced Shopify Liquid customization to build unique layouts and dynamic store features.",
-  },
-  {
-    id: 3,
-    icon: "🖥️",
-    title: "WordPress Development",
-    description:
-      "Fully customized WordPress websites, themes, and plugins with speed and security in mind.",
-  },
-  {
-    id: 4,
-    icon: "⚛️",
-    title: "React Development",
-    description:
-      "Modern, fast, and interactive user interfaces built with React and best UI practices.",
-  },
-  {
-    id: 5,
-    icon: "⚙️",
-    title: "PHP Development",
-    description:
-      "Backend development using clean, scalable PHP code for custom business solutions.",
-  },
-  {
-    id: 6,
-    icon: "🎨",
-    title: "HTML & CSS",
-    description:
-      "Pixel-perfect, responsive layouts using modern HTML5 and CSS3 standards.",
-  },
-];
+    {
+      id: 1,
+      icon: "🛒",
+      title: "Shopify Development",
+      description:
+        "Custom Shopify stores, theme customization, and performance optimization for scalable eCommerce.",
+    },
+    {
+      id: 2,
+      icon: "🧩",
+      title: "Custom Liquid Development",
+      description:
+        "Advanced Shopify Liquid customization to build unique layouts and dynamic store features.",
+    },
+    {
+      id: 3,
+      icon: "🖥️",
+      title: "WordPress Development",
+      description:
+        "Fully customized WordPress websites, themes, and plugins with speed and security in mind.",
+    },
+    // {
+    //   id: 4,
+    //   icon: "⚛️",
+    //   title: "React Development",
+    //   description:
+    //     "Modern, fast, and interactive user interfaces built with React and best UI practices.",
+    // },
+    {
+      id: 5,
+      icon: "⚙️",
+      title: "PHP Development",
+      description:
+        "Backend development using clean, scalable PHP code for custom business solutions.",
+    },
+    {
+      id: 6,
+      icon: "🎨",
+      title: "HTML & CSS",
+      description:
+        "Pixel-perfect, responsive layouts using modern HTML5 and CSS3 standards.",
+    },
+  ];
 
   const [current, setCurrent] = useState(0);
 
@@ -99,9 +125,16 @@ function Home() {
   const next = () => setActiveIndex((activeIndex + 1) % filtered.length);
   const prev = () => setActiveIndex((activeIndex - 1 + filtered.length) % filtered.length);
 
+
+
+
+
+
+
+
+  
   return (
     <div className="home-container">
-
       {/* HERO */}
       <div className="home-hero">
         <div className="hero-content">
@@ -143,108 +176,97 @@ function Home() {
         </div>
       </section>
       {/* SERVICES */}
-     <section className="services">
-  <div className="services-header">
-    <div className="services-text">
-      <span className="services-label">SERVICES</span>
-      <h1 className="services-title">
-        <span>Everything your</span>
-        <span>Shopify Project Needs.</span>
-      </h1>
-      <p className="services-subtitle">
-        From complex custom apps to pixel-perfect theme development – I handle the technical heavy lifting so you can focus on growth.
-      </p>
-    </div>
-    <button className="services-cta">
-      Get a Quote <span>→</span>
-    </button>
-  </div>
+      <section className="services">
+        <div className="services-header">
+          <div className="services-text">
+            <span className="services-label">SERVICES</span>
+            <h1 className="services-title">
+              <span>Web Solutions</span>
+              <span>That Scale.</span>
 
-  {servicesData.map((service, index) => (
-    <div className="service-card" key={service.id}>
-      <div className="service-icon">{service.icon}</div>
 
-      <div className="service-content">
-        <h3>{service.title}</h3>
-        <p>{service.description}</p>
-      </div>
+            </h1>
 
-      <div className="service-index">
-        {String(index + 1).padStart(2, "0")}
-      </div>
-    </div>
-  ))}
-</section>
+            <p className="services-subtitle">
+              I specialize in Shopify, WordPress, and custom web development using Liquid, PHP, React, HTML, and CSS.
+              From high-converting eCommerce stores to custom-coded solutions, I build fast, scalable, and reliable digital experiences.
+            </p>
+
+          </div>
+          <button className="services-cta">
+            Get a Quote <span>→</span>
+          </button>
+        </div>
+
+        {servicesData.map((service, index) => (
+          <div className="service-card" key={service.id}>
+            <div className="service-icon">{service.icon}</div>
+
+            <div className="service-content">
+              <h3>{service.title}</h3>
+              <p>{service.description}</p>
+            </div>
+
+            <div className="service-index">
+              {String(index + 1).padStart(2, "0")}
+            </div>
+          </div>
+        ))}
+      </section>
+<Projects/>
 
       {/* PORTFOLIO CAROUSEL WITH TABS */}
       <div className="carousel-container">
-        <h2>Our Work</h2>
-        <p className="portfolio-sub">Some of our recent projects</p>
+  <h2>Client Reviews</h2>
+  <p className="portfolio-sub">What clients say about my work</p>
 
-        {/* Tabs */}
-        <div className="carousel-tabs">
-          {tabs.map(t => (
-            <button
-              key={t}
-              className={t === tab ? "tab-active" : ""}
-              onClick={() => { setTab(t); setActiveIndex(0); }}
-            >
-              {t}
-            </button>
-          ))}
-        </div>
+  <div
+    className="carousel-stage"
+    onMouseEnter={() => setIsPaused(true)}
+    onMouseLeave={() => setIsPaused(false)}
+  >
+    {reviews.map((item, index) => {
+      let positionClass = "hidden";
+      const offset = index - activeIndex;
 
-        {/* Carousel Stage */}
-        <div
-          className="carousel-stage"
-          onMouseEnter={() => setIsPaused(true)}   // Pause on hover
-          onMouseLeave={() => setIsPaused(false)} // Resume on leave
-        >
-          {filtered.map((item, index) => {
-            let positionClass = "hidden";
-            const offset = index - activeIndex;
+      if (offset === 0) positionClass = "active";
+      else if (offset === -1 || (activeIndex === 0 && index === reviews.length - 1)) positionClass = "left";
+      else if (offset === 1 || (activeIndex === reviews.length - 1 && index === 0)) positionClass = "right";
+      else if (offset < -1) positionClass = "far-left";
+      else if (offset > 1) positionClass = "far-right";
 
-            if (offset === 0) positionClass = "active";
-            else if (offset === -1 || (activeIndex === 0 && index === filtered.length - 1)) positionClass = "left";
-            else if (offset === 1 || (activeIndex === filtered.length - 1 && index === 0)) positionClass = "right";
-            else if (offset < -1) positionClass = "far-left";
-            else if (offset > 1) positionClass = "far-right";
+      return (
+        <div className={`carousel-card ${positionClass}`} key={index}>
+          <div className="card-content">
+            <div className="card-header">
+              <h3>{item.title}</h3>
+              <span className="tag-pill">{item.category}</span>
+            </div>
 
-            return (
-              <div className={`carousel-card ${positionClass}`} key={index}>
-                <div className="card-image" style={{ backgroundImage: `url(${item.img})` }}>
-                  <div className="portfolio-overlay">
-                    <a href="#" className="view-btn">{item.btn}</a>
-                  </div>
-                </div>
-                <div className="card-content">
-                  <div className="card-header">
-                    <h3>{item.title}</h3>
-                    <span className="tag-pill">{item.category}</span>
-                  </div>
-                  <p>{item.type}</p>
-                  <div className="stars">{item.stars}</div>
-                </div>
-              </div>
-            );
-          })}
-        </div>
+            <p>"{item.type}"</p>
 
-        {/* Carousel Controls */}
-        <div className="carousel-controls">
-          <button className="nav-btn" onClick={prev}>‹</button>
-          <div className="pagination-indicators">
-            {filtered.map((_, i) => (
-              <div
-                key={i}
-                className={`dot ${i === activeIndex ? "active" : ""}`}
-                onClick={() => setActiveIndex(i)}
-              ></div>
-            ))}
+            <div className="stars">{item.stars}</div>
           </div>
-          <button className="nav-btn" onClick={next}>›</button>
         </div>
-      </div>
+      );
+    })}
+  </div>
+
+  <div className="carousel-controls">
+    <button className="nav-btn" onClick={prev}>‹</button>
+    <div className="pagination-indicators">
+      {reviews.map((_, i) => (
+        <div
+          key={i}
+          className={`dot ${i === activeIndex ? "active" : ""}`}
+          onClick={() => setActiveIndex(i)}
+        ></div>
+      ))}
+    </div>
+    <button className="nav-btn" onClick={next}>›</button>
+  </div>
+</div>
+
 
       {/* HOW WE WORK */}
       <div className="work-section">
@@ -259,17 +281,7 @@ function Home() {
       </div>
 
       {/* TESTIMONIALS */}
-      <div className="testimonials">
-        <h2>What Our Customers Say</h2>
-        <p className="testimonials-sub">Trusted by clients worldwide for quality work</p>
-        <div className="testimonial-card active">
-          <p className="review">{reviews[current].message}</p>
-          <h4>{reviews[current].name}</h4>
-          <span>{reviews[current].role}</span>
-          <div className="stars">{reviews[current].stars}</div>
-        </div>
-      </div>
-
+      
 
 
       {/* CONTACT CARD */}

@@ -1,0 +1,85 @@
+.projects {
+  background: #000;
+  color: #fff;
+  padding: 100px 6%;
+}
+
+/* Tabs */
+.projects-tabs {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 50px;
+}
+
+.projects-tabs button {
+  background: transparent;
+  color: #aaa;
+  border: 1px solid #222;
+  padding: 10px 22px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.projects-tabs button.active,
+.projects-tabs button:hover {
+  color: #000;
+  background: #00ffcc;
+  border-color: #00ffcc;
+}
+
+/* Grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+/* Card */
+.project-card {
+  background: #0a0a0a;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  transition: border 0.4s ease, transform 0.4s ease;
+}
+
+.project-card:hover {
+  border: 1px solid #00ffcc;
+  transform: translateY(-6px);
+}
+
+/* Image */
+.project-image {
+  height: 260px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: auto;
+  transform: translateY(0);
+  transition: transform 6s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+/* Image scroll effect */
+.project-card:hover .project-image img {
+  transform: translateY(-40%);
+}
+
+/* Info */
+.project-info {
+  padding: 22px;
+}
+
+.project-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.project-info p {
+  font-size: 14px;
+  color: #aaa;
+}
