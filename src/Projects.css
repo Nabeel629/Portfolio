@@ -4,7 +4,7 @@
   padding: 100px 6%;
 }
 
-/* Tabs */
+/* ================= TABS ================= */
 .projects-tabs {
   display: flex;
   gap: 16px;
@@ -29,14 +29,14 @@
   border-color: #00ffcc;
 }
 
-/* Grid */
+/* ================= GRID ================= */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 40px;
 }
 
-/* Card */
+/* ================= CARD ================= */
 .project-card {
   background: #0a0a0a;
   border-radius: 20px;
@@ -50,7 +50,12 @@
   transform: translateY(-6px);
 }
 
-/* Image */
+.project-card h3 {
+  padding: 14px 18px;
+  font-size: 17px;
+}
+
+/* ================= IMAGE ================= */
 .project-image {
   height: 260px;
   overflow: hidden;
@@ -68,18 +73,56 @@
   transform: translateY(-40%);
 }
 
-/* Info */
-.project-info {
-  padding: 22px;
+/* ================= LOAD MORE (FIXED) ================= */
+
+/* 🔥 THIS WAS THE MAIN ISSUE */
+.load-more-wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
 }
 
-.project-info h3 {
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 6px;
+/* Button */
+.load-more-btn {
+  padding: 14px 36px;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border-radius: 50px;
+  border: 2px solid #00ffcc;
+  background: transparent;
+  color: #00ffcc;
+  cursor: pointer;
+  transition: all 0.35s ease;
 }
 
-.project-info p {
-  font-size: 14px;
-  color: #aaa;
+/* Hover */
+.load-more-btn:hover {
+  background: #00ffcc;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 255, 204, 0.25);
+}
+
+/* Click */
+.load-more-btn:active {
+  transform: scale(0.96);
+}
+
+/* Disabled */
+.load-more-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  box-shadow: none;
+  transform: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .load-more-btn {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
 }
