@@ -6,7 +6,7 @@ function Footer() {
       <div className="footer-container">
 
         <div className="footer-col">
-          <h2 className="logo">ReactSite</h2>
+          <h2 className="logo">Nabeel Akram</h2>
           <p>Modern React website built for learning and practice.</p>
         </div>
 
@@ -20,8 +20,8 @@ function Footer() {
 
         <div className="footer-col">
           <h4>Contact</h4>
-          <p>📧 info@reactsite.com</p>
-          <p>📞 +92 300 1234567</p>
+          <p>📧 nabeelakram629@gmai.com</p>
+          <p>📞 +92 3099956484</p>
           <p>📍 Lahore, Pakistan</p>
         </div>
 
