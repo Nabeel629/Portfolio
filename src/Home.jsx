@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import aboutImg from "./assets/about.jpg";
+import NabeelAkram from "./assets/NabeelAkram.jpeg";
 import ss from "./assets/ss.png";
 import './home.css';
 import './Anim.css';
@@ -146,7 +146,7 @@ function Home() {
           </div>
         </div>
         <div className="hero-image">
-          <img src={aboutImg} alt="Website Illustration" />
+          <img src={NabeelAkram} alt="Website Illustration" />
         </div>
       </div>
       {/* ABOUT / EXPERIENCE SECTION */}
