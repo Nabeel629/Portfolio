@@ -6,38 +6,38 @@ import './Anim.css';
 import Projects from "./Projects";
 function Home() {
   // ---------------- TESTIMONIALS ----------------
-const reviews = [
-  {
-    title: "Ahmed Khan",
-    category: "Shopify Store",
-    type: "Excellent Shopify development. Clean code, fast delivery, and great communication throughout the project.",
-    stars: "★★★★★"
-  },
-  {
-    title: "Sarah Malik",
-    category: "WordPress Website",
-    type: "Highly professional work. The website looks modern and performs perfectly on all devices.",
-    stars: "★★★★★"
-  },
-  {
-    title: "Usman Ali",
-    category: "React App",
-    type: "Amazing React skills. UI animations and performance were exactly what we needed.",
-    stars: "★★★★★"
-  },
-  {
-    title: "Hassan Raza",
-    category: "Custom PHP",
-    type: "Delivered a fully customized solution. Very satisfied with the quality and support.",
-    stars: "★★★★☆"
-  },
-  {
-    title: "Ayesha Noor",
-    category: "Shopify Customization",
-    type: "Quick fixes, custom features, and great attention to detail. Highly recommended.",
-    stars: "★★★★★"
-  }
-];
+  const reviews = [
+    {
+      title: "Ahmed Khan",
+      category: "Shopify Store",
+      type: "Excellent Shopify development. Clean code, fast delivery, and great communication throughout the project.",
+      stars: "★★★★★"
+    },
+    {
+      title: "Sarah Malik",
+      category: "WordPress Website",
+      type: "Highly professional work. The website looks modern and performs perfectly on all devices.",
+      stars: "★★★★★"
+    },
+    {
+      title: "Usman Ali",
+      category: "React App",
+      type: "Amazing React skills. UI animations and performance were exactly what we needed.",
+      stars: "★★★★★"
+    },
+    {
+      title: "Hassan Raza",
+      category: "Custom PHP",
+      type: "Delivered a fully customized solution. Very satisfied with the quality and support.",
+      stars: "★★★★☆"
+    },
+    {
+      title: "Ayesha Noor",
+      category: "Shopify Customization",
+      type: "Quick fixes, custom features, and great attention to detail. Highly recommended.",
+      stars: "★★★★★"
+    }
+  ];
 
 
   const servicesData = [
@@ -132,7 +132,7 @@ const reviews = [
 
 
 
-  
+
   return (
     <div className="home-container">
       {/* HERO */}
@@ -152,7 +152,7 @@ const reviews = [
       {/* ABOUT / EXPERIENCE SECTION */}
       <section className="about-section">
         <div className="about-container">
-          <h2>About Me</h2>
+          <h2>About us</h2>
           <p>
             Hi! I am <strong>Nabeel Akram</strong>, a passionate web developer and designer with over <strong>2 years of professional experience</strong>
             in building Shopify stores, WordPress blogs, custom PHP websites, and Elementor-based websites. I specialize in creating
@@ -213,59 +213,59 @@ const reviews = [
           </div>
         ))}
       </section>
-<Projects/>
+      <Projects />
 
       {/* PORTFOLIO CAROUSEL WITH TABS */}
       <div className="carousel-container">
-  <h2>Client Reviews</h2>
-  <p className="portfolio-sub">What clients say about my work</p>
+        <h2>Client Reviews</h2>
+        <p className="portfolio-sub">What clients say about my work</p>
 
-  <div
-    className="carousel-stage"
-    onMouseEnter={() => setIsPaused(true)}
-    onMouseLeave={() => setIsPaused(false)}
-  >
-    {reviews.map((item, index) => {
-      let positionClass = "hidden";
-      const offset = index - activeIndex;
-
-      if (offset === 0) positionClass = "active";
-      else if (offset === -1 || (activeIndex === 0 && index === reviews.length - 1)) positionClass = "left";
-      else if (offset === 1 || (activeIndex === reviews.length - 1 && index === 0)) positionClass = "right";
-      else if (offset < -1) positionClass = "far-left";
-      else if (offset > 1) positionClass = "far-right";
-
-      return (
-        <div className={`carousel-card ${positionClass}`} key={index}>
-          <div className="card-content">
-            <div className="card-header">
-              <h3>{item.title}</h3>
-              <span className="tag-pill">{item.category}</span>
-            </div>
-
-            <p>"{item.type}"</p>
-
-            <div className="stars">{item.stars}</div>
-          </div>
-        </div>
-      );
-    })}
-  </div>
-
-  <div className="carousel-controls">
-    <button className="nav-btn" onClick={prev}>‹</button>
-    <div className="pagination-indicators">
-      {reviews.map((_, i) => (
         <div
-          key={i}
-          className={`dot ${i === activeIndex ? "active" : ""}`}
-          onClick={() => setActiveIndex(i)}
-        ></div>
-      ))}
-    </div>
-    <button className="nav-btn" onClick={next}>›</button>
-  </div>
-</div>
+          className="carousel-stage"
+          onMouseEnter={() => setIsPaused(true)}
+          onMouseLeave={() => setIsPaused(false)}
+        >
+          {reviews.map((item, index) => {
+            let positionClass = "hidden";
+            const offset = index - activeIndex;
+
+            if (offset === 0) positionClass = "active";
+            else if (offset === -1 || (activeIndex === 0 && index === reviews.length - 1)) positionClass = "left";
+            else if (offset === 1 || (activeIndex === reviews.length - 1 && index === 0)) positionClass = "right";
+            else if (offset < -1) positionClass = "far-left";
+            else if (offset > 1) positionClass = "far-right";
+
+            return (
+              <div className={`carousel-card ${positionClass}`} key={index}>
+                <div className="card-content">
+                  <div className="card-header">
+                    <h3>{item.title}</h3>
+                    <span className="tag-pill">{item.category}</span>
+                  </div>
+
+                  <p>"{item.type}"</p>
+
+                  <div className="stars">{item.stars}</div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="carousel-controls">
+          <button className="nav-btn" onClick={prev}>‹</button>
+          <div className="pagination-indicators">
+            {reviews.map((_, i) => (
+              <div
+                key={i}
+                className={`dot ${i === activeIndex ? "active" : ""}`}
+                onClick={() => setActiveIndex(i)}
+              ></div>
+            ))}
+          </div>
+          <button className="nav-btn" onClick={next}>›</button>
+        </div>
+      </div>
 
 
       {/* HOW WE WORK */}
@@ -281,7 +281,7 @@ const reviews = [
       </div>
 
       {/* TESTIMONIALS */}
-      
+
 
 
       {/* CONTACT CARD */}
