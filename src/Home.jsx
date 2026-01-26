@@ -169,8 +169,12 @@ function Home() {
               <p>Projects Completed</p>
             </div>
             <div className="stat-card anim">
-              <h3>5+</h3>
-              <p>Industries Served</p>
+              <h3>50+</h3>
+              <p>Happy Clients</p>
+            </div>
+            <div className="stat-card anim">
+              <h3>40</h3>
+              <p>Return Clients</p>
             </div>
           </div>
         </div>
