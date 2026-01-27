@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import "./carousel.css";
 
 const achievements = [
-  // tumhare items
+  // tumhare itemsx
 ];
 
 export default function Carousel() {
