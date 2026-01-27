@@ -6,8 +6,10 @@ function Footer() {
       <div className="footer-container">
 
         <div className="footer-col">
-          <h2 className="logo">Nabeel Akram</h2>
-          <p>Modern React website built for learning and practice.</p>
+          {/* <h2 className="logo">Nabeel Akram</h2> */}
+          <p>A dedicated web developer specializing in custom websites and creative solutions.
+I combine design and functionality to deliver high-quality digital products.
+Always learning, always improving.</p>
         </div>
 
         <div className="footer-col">

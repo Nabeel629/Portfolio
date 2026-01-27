@@ -1,15 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Header from "./Header";
+import Header from "./header/Header";
 
 // Pages
-import Home from "./Home";
-import About from "./About";
-import Services from "./Services";
-import Contact from "./Contact";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import Contact from "./Pages/Contact";
 import { use, useEffect, useState } from "react";
-import Lenis from "@studio-freight/lenis";
-import Footer from "./Footer";
-import Carousel from "./Carousel";
+import Footer from "./footer/Footer";
 function App() {
    const [page,setPage]=useState("Nabeel Akram");
 useEffect(() => {
@@ -35,3 +33,4 @@ useEffect(() => {
 }
 
 export default App;
+  

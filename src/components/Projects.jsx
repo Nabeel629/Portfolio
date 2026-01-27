@@ -2,42 +2,42 @@ import { useState } from "react";
 import "./Projects.css";
 
 /* ================= SHOPIFY IMAGES ================= */
-import davisandcoaesthetics from "./assets/shopify_store_screen_shots/davisandcoaesthetics.png";
-import bijjuonline from "./assets/shopify_store_screen_shots/bijjuonline.png";
-import brandinpk from "./assets/shopify_store_screen_shots/brandinpk.png";
-import colourway from "./assets/shopify_store_screen_shots/colourway.png";
-import dermpharma from "./assets/shopify_store_screen_shots/dermpharma.png";
-import gowarafoods from "./assets/shopify_store_screen_shots/gowarafoods.png";
-import laxariah from "./assets/shopify_store_screen_shots/laxariah.png";
-import originpharma from "./assets/shopify_store_screen_shots/originpharma.png";
-import rosewoodfurnish from "./assets/shopify_store_screen_shots/rosewoodfurnish.png";
-import sizucchero from "./assets/shopify_store_screen_shots/sizucchero.png";
-import ysons from "./assets/shopify_store_screen_shots/ysons-pk.png";
-import zainabzari from "./assets/shopify_store_screen_shots/zainabzari.png";
-import zensorg from "./assets/shopify_store_screen_shots/zensorg.png";
+import davisandcoaesthetics from "../assets/shopify_store_screen_shots/davisandcoaesthetics.png";
+import bijjuonline from "../assets/shopify_store_screen_shots/bijjuonline.png";
+import brandinpk from "../assets/shopify_store_screen_shots/brandinpk.png";
+import colourway from "../assets/shopify_store_screen_shots/colourway.png";
+import dermpharma from "../assets/shopify_store_screen_shots/dermpharma.png";
+import gowarafoods from "../assets/shopify_store_screen_shots/gowarafoods.png";
+import laxariah from "../assets/shopify_store_screen_shots/laxariah.png";
+import originpharma from "../assets/shopify_store_screen_shots/originpharma.png";
+import rosewoodfurnish from "../assets/shopify_store_screen_shots/rosewoodfurnish.png";
+import sizucchero from "../assets/shopify_store_screen_shots/sizucchero.png";
+import ysons from "../assets/shopify_store_screen_shots/ysons-pk.png";
+import zainabzari from "../assets/shopify_store_screen_shots/zainabzari.png";
+import zensorg from "../assets/shopify_store_screen_shots/zensorg.png";
 
 /* ================= WORDPRESS IMAGES ================= */
-import zpersoft from "./assets/wordpress_website_screenShot/zpersoft.png";
-import asphaltattire from "./assets/wordpress_website_screenShot/asphaltattire.png";
-import baghbani from "./assets/wordpress_website_screenShot/baghbani.png";
-import dermatology from "./assets/wordpress_website_screenShot/dermatology.png";
-import developertech from "./assets/wordpress_website_screenShot/developertech-net.png";
-import ecogrocer from "./assets/wordpress_website_screenShot/ecogrocer-store.png";
-import furryswellness from "./assets/wordpress_website_screenShot/furryswellness.png";
-import gimechanical from "./assets/wordpress_website_screenShot/gimechanical.png";
-import gracefulhijabs from "./assets/wordpress_website_screenShot/gracefulhijabs.png";
-import grindandgains from "./assets/wordpress_website_screenShot/grindandgains.png";
-import mandystore from "./assets/wordpress_website_screenShot/mandystore-online.png";
-import pnyc from "./assets/wordpress_website_screenShot/pnyc-pk.png";
-import polani from "./assets/wordpress_website_screenShot/polani-ca.png";
-import primefootwears from "./assets/wordpress_website_screenShot/primefootwears.png";
-import rtvoutdoors from "./assets/wordpress_website_screenShot/rtvoutdoors-net.png";
-import thefragranceshouse from "./assets/wordpress_website_screenShot/thefragranceshouse.png";
-import theurbanstrap from "./assets/wordpress_website_screenShot/theurbanstrap.png";
-import upfrontsecurityservices from "./assets/wordpress_website_screenShot/upfrontsecurityservices.png";
-import villagecrafting from "./assets/wordpress_website_screenShot/villagecrafting.png";
-import wisersoftsol from "./assets/wordpress_website_screenShot/wisersoftsol.png";
-import xeemart from "./assets/wordpress_website_screenShot/xeemart-pk.png";
+import zpersoft from "../assets/wordpress_website_screenShot/zpersoft.png";
+import asphaltattire from "../assets/wordpress_website_screenShot/asphaltattire.png";
+import baghbani from "../assets/wordpress_website_screenShot/baghbani.png";
+import dermatology from "../assets/wordpress_website_screenShot/dermatology.png";
+import developertech from "../assets/wordpress_website_screenShot/developertech-net.png";
+import ecogrocer from "../assets/wordpress_website_screenShot/ecogrocer-store.png";
+import furryswellness from "../assets/wordpress_website_screenShot/furryswellness.png";
+import gimechanical from "../assets/wordpress_website_screenShot/gimechanical.png";
+import gracefulhijabs from "../assets/wordpress_website_screenShot/gracefulhijabs.png";
+import grindandgains from "../assets/wordpress_website_screenShot/grindandgains.png";
+import mandystore from "../assets/wordpress_website_screenShot/mandystore-online.png";
+import pnyc from "../assets/wordpress_website_screenShot/pnyc-pk.png";
+import polani from "../assets/wordpress_website_screenShot/polani-ca.png";
+import primefootwears from "../assets/wordpress_website_screenShot/primefootwears.png";
+import rtvoutdoors from "../assets/wordpress_website_screenShot/rtvoutdoors-net.png";
+import thefragranceshouse from "../assets/wordpress_website_screenShot/thefragranceshouse.png";
+import theurbanstrap from "../assets/wordpress_website_screenShot/theurbanstrap.png";
+import upfrontsecurityservices from "../assets/wordpress_website_screenShot/upfrontsecurityservices.png";
+import villagecrafting from "../assets/wordpress_website_screenShot/villagecrafting.png";
+import wisersoftsol from "../assets/wordpress_website_screenShot/wisersoftsol.png";
+import xeemart from "../assets/wordpress_website_screenShot/xeemart-pk.png";
 
 /* ================= PROJECT DATA ================= */
 const projectsData = [

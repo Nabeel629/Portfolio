@@ -1,4 +1,5 @@
-import aboutImg from "./assets/about.jpg";
+import aboutImg from "../assets/NabeelAkram.jpeg";
+
 function About() {
     return (<>
               <div className="top-heading">
