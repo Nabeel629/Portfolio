@@ -54,6 +54,10 @@
   transform: translateY(-6px);
 }
 
+.project-link {
+  text-decoration: none;
+  color: inherit;
+}
 
 .tab-btn.active {
   background: #00775f;
