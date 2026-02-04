@@ -62,9 +62,15 @@ function ServicesCard(){
             </p>
 
           </div>
+          <a
+    href="https://wa.me/923099956484?text=Hi%20are%20you%20available%3F"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
           <button className="services-cta">
-            Get a Quote <span>→</span>
+            Get a Quote 
           </button>
+          </a>
         </div>
 
         {servicesData.map((service, index) => (
