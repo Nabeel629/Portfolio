@@ -9,8 +9,9 @@ import Contact from "./Pages/Contact";
 import { use, useEffect, useState } from "react";
 import Footer from "./footer/Footer";
 function App() {
+   const [page,setPage]=useState("Nabeel Akram");
 useEffect(() => {
-  document.title = "Nabeel Akram Portfolio";
+  document.title = page+" Portfolio";
 }, [page]);
    return (
     <BrowserRouter>
