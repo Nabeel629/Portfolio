@@ -208,13 +208,21 @@ function Home() {
       </div>
 
       {/* CONTACT */}
-      <div className="contact-card">
-        <h2>Get a Free Quote</h2>
-        <p>
-          Let’s discuss your project and build the perfect website.
-        </p>
-        <button>Get Quote</button>
-      </div>
+    <div className="contact-card">
+  <h2>Get a Free Quote</h2>
+  <p>
+    Let’s discuss your project and build the perfect website.
+  </p>
+
+  <a
+    href="https://wa.me/923099956484?text=Hi%20are%20you%20available%3F"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <button>Chat on WhatsApp</button>
+  </a>
+</div>
+
     </div>
   );
 }
