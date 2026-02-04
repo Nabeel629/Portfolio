@@ -1,7 +1,63 @@
 .projects {
-  background: #000;
+  position: relative;
+  padding: 120px 80px;
   color: #fff;
-  padding: 100px 6%;
+  overflow: hidden;
+
+  background: linear-gradient(
+    120deg,
+    #000000,
+    #0d0d0d,
+    #00775f1f,
+    #0d0d0d,
+    #000000
+  );
+
+  background-size: 500% 500%;
+  animation: smoothGradient 26s ease-in-out infinite;
+}
+
+@keyframes smoothGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.projects::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at 30% 20%,
+    rgba(0, 119, 95, 0.25),
+    transparent 55%
+  );
+
+  pointer-events: none;
+}
+.project-card {
+  background: #0a0a0a;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #111;
+  transition: all 0.4s ease;
+}
+
+.project-card:hover {
+  border-color: #00775f;
+  transform: translateY(-6px);
+}
+
+
+.tab-btn.active {
+  background: #00775f;
+  color: #fff;
 }
 
 /* ================= TABS ================= */
@@ -120,6 +176,20 @@
 }
 
 /* ================= RESPONSIVE ================= */
+
+
+@media (max-width: 1024px) {
+  .projects {
+    padding: 100px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 80px 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .load-more-btn {
     padding: 12px 28px;
