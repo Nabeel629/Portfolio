@@ -41,3 +41,13 @@
   font-size: 14px;
   color: #777;
 }
+p a {
+  color: #00ffcc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+

@@ -73,7 +73,9 @@ function Home() {
             grow your business online.
           </p>
           <div className="hero-buttons">
-            <a href="/contact" className="btn-primary">
+            <a href="https://wa.me/923099956484?text=Hi%20are%20you%20available%3F"
+    target="_blank"
+    rel="noopener noreferrer" className="btn-primary">
               Get Started
             </a>
             <a href="/services" className="btn-outline">

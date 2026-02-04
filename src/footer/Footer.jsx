@@ -22,9 +22,10 @@ Always learning, always improving.</p>
 
         <div className="footer-col">
           <h4>Contact</h4>
-          <p>📧 nabeelakram629@gmai.com</p>
-          <p>📞 +92 3099956484</p>
-          <p>📍 Lahore, Pakistan</p>
+<p><a href="mailto:nabeelakram629@gmail.com">nabeelakram629@gmail.com</a>
+</p>
+          <p>+92 3099956484</p>
+          <p>Lahore, Pakistan</p>
         </div>
 
       </div>
