@@ -39,9 +39,9 @@ function Contact() {
 
 
       </p>
-      <p>📍 Lahore, Pakistan</p>
-      <p>📧 nabeel@example.com</p>
-      <p>📞 +92 300 1234567</p>
+      <p>Lahore, Pakistan</p>
+<p><a href="mailto:nabeelakram629@gmail.com">nabeelakram629@gmail.com</a>
+</p>      <p>+923099956484</p>
 
      
     </div>

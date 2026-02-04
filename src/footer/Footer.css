@@ -19,6 +19,17 @@
   color: #00ffcc;
   margin-bottom: 15px;
 }
+.footer a {
+  color: #aaa;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 8px;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #00ffcc;
+}
 
 .footer-col p,
 .footer-col a {
