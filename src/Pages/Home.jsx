@@ -4,7 +4,7 @@ import "../home.css";
 import "../Anim.css";
 import Projects from "../components/Projects";
 import ServicesCard from "../components/ServicesCard";
-import "../components/Carousel.css";
+import "../components/carousel.css";
 function Home() {
   // ---------------- TESTIMONIALS ----------------
   const reviews = [
