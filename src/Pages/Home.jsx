@@ -82,7 +82,7 @@ function Home() {
           </div>
         </div>
         <div className="hero-image">
-          <img src={NabeelAkram} alt="Website Illustration" />
+          <img src={NabeelAkram} alt="Nabeel Akram" />
         </div>
       </div>
 
